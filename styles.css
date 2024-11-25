@@ -1,0 +1,192 @@
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+main{
+    height: 100vh;
+    margin: 0;
+    
+}
+
+.main{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    background: url(img/me.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+    background-attachment: fixed;
+    
+}
+.main::before{
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: rgba(0, 0, 0, 0.5);
+z-index: -1;
+}
+
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logodiv{
+    margin-left: 2em;
+}
+.logodiv img {
+    width: 80px;
+    height:90px;
+}
+
+.title{
+    text-align: center;
+}
+
+nav{
+    margin-right: 2em;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+}
+
+.hero{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.profile-photo {
+    border-radius: 50%; 
+    width: 45%; 
+    height: auto;
+}
+
+.hero-text{
+    width: 45%;
+}
+
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.skills div{
+    width: 30%;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 0 5px;
+    border-radius: 10px;
+    
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+thead th {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+
+thead th i {
+    font-size: 2em; 
+    display: block;
+    margin-bottom: 10px;
+}
+thead th h3 {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+tbody td {
+    padding: 20px;
+    text-align: center;
+    font-size: 1em;
+    background-color: #444;
+    color: #fff;
+}
+tbody td p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+table, th, td {
+    border: 1px solid #ddd; 
+}
+
+footer {
+    margin:0 ;
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+}
+footer i{
+    color: #fff;
+    font-size: 1.5em;
+    padding: 0 2em;
+}
+
+
+form {
+    display: grid;
+    grid-gap: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+}
+
+button {
+    padding: 0.7rem 1.5rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #444;
+}
